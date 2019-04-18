@@ -1,0 +1,252 @@
+/* 
+FileName: style.css
+Created by: Gurjot Singh
+ID: B00811724
+Date: 28-March-2019
+Description: Contains the CSS Styles for the Graphs 
+*/
+
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #31237e;
+  outline: 1px solid black;
+}
+
+.bar:hover {
+  fill: #FF4500;
+}
+
+.bar1:hover {
+  fill: #B22222;
+}
+
+#chart-area .svg_details1 {
+  margin: 0 auto;
+  display: inherit;
+  float: left;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.svg_details {
+  border: 1px solid black;
+  background-color: #1E90FF;
+}
+
+.land {
+  fill: #DAA520;
+  stroke: #B8860B;
+}
+
+.boundary {
+  fill: none;
+  stroke: #B8860B;
+}
+
+.graticule {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.graticule :nth-child(2n) {
+  stroke-dasharray: 2,2;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  padding: 2px;
+  font: 12px sans-serif;
+  outline-color: black;
+  border-color: black;
+  text-decoration-color: "blue";
+  background-color: white;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+div.tooltip_pie {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 36px;
+  padding: 2px;
+  font: 12px sans-serif;
+  outline-color: black;
+  border-color: black;
+  text-decoration-color: "blue";
+  background-color: white;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+/*bar line charts*/
+body {
+  margin: 0px !important;
+  background: #ede1514d;
+}
+
+/* Style the lines by removing the fill and applying a stroke */
+.line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+}
+
+.chart rect.mouseover {
+  fill: #9abad6;
+}
+
+div.tooltip_bar {
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.select-match {
+  background-color: #98cde1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 6px 0px;
+  z-index: 1;
+}
+
+.ourProjectMainDiv {
+  display: grid;
+  grid: 500px / auto auto;
+  padding: 80px 50px;
+  margin-top: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.pie-chart {
+  border: 2px solid red;
+}
+
+.line-chart-heading {
+  font-weight: bold;
+}
+
+.header {
+  color: white;
+  background-color: #f50707;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 5;
+}
+
+.toggle-sort {
+  margin: 0px!important;
+}
+
+.choose-match {
+  margin: 70px 7px 25px 7px;
+  position: relative;
+  left: 380px;
+}
+
+.line1 {
+  fill: none;
+  stroke: #8B0000;
+  stroke-width: 3;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+  fill: #ffab00;
+  stroke: #fff;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+
+/*Reffered from https://codepen.io/jdsteinbach/pen/iydgf*/
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #2ea70f;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[
+  type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

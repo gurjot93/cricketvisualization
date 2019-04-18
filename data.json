@@ -1,0 +1,55 @@
+{
+	"player1": [
+   		{ "region": "COVER", "count": "12"},
+		{ "region": "PULL", "count": "33"},
+		{ "region": "CUT", "count": "41"},
+		{ "region": "OFF", "count": "80"},
+		{ "region": "ON", "count": "89"},
+		{ "region": "STRAIGHT", "count": "89"}		
+		],
+	"player2": [
+   		{ "region": "COVER", "count": "3"},
+		{ "region": "PULL", "count": "2"},
+		{ "region": "CUT", "count": "10"},
+		{ "region": "OFF", "count": "22"},
+		{ "region": "ON", "count": "19"},
+		{ "region": "STRAIGHT", "count": "3"}		
+		
+	],
+	"player3": [
+   		{ "region": "COVER", "count": "21"},
+		{ "region": "PULL", "count": "16"},
+		{ "region": "CUT", "count": "14"},
+		{ "region": "OFF", "count": "41"},
+		{ "region": "ON", "count": "18"},
+		{ "region": "STRAIGHT", "count": "6"}		
+		
+	],
+	"player4": [
+   		{ "region": "COVER", "count": "13"},
+		{ "region": "PULL", "count": "24"},
+		{ "region": "CUT", "count": "7"},
+		{ "region": "OFF", "count": "20"},
+		{ "region": "ON", "count": "41"},
+		{ "region": "STRAIGHT", "count": "28"}		
+		
+	],
+	"player5": [
+   		{ "region": "COVER", "count": "6"},
+		{ "region": "PULL", "count": "4"},
+		{ "region": "CUT", "count": "1"},
+		{ "region": "OFF", "count": "46"},
+		{ "region": "ON", "count": "19"},
+		{ "region": "STRAIGHT", "count": "0"}		
+		
+	],
+	"player6": [
+   		{ "region": "COVER", "count": "10"},
+		{ "region": "PULL", "count": "25"},
+		{ "region": "CUT", "count": "5"},
+		{ "region": "OFF", "count": "25"},
+		{ "region": "ON", "count": "97"},
+		{ "region": "STRAIGHT", "count": "5"}		
+		
+	]
+}

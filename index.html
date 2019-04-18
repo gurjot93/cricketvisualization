@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--Loading the Style.css file -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<title>Visualization Project: Gurjot Singh</title>
+
+<body>
+    <!-- D3 V5 library-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <div class="header">
+        <h1 align="center">Visualization of Runs Scored in Cricket Matches</h1>
+    </div>
+    <!--Pie Chart implementation of the Dashboard -->
+    <div class="ourProjectMainDiv">
+
+        <div id="chart-area">
+            <h2 class="line-chart-heading">Analysis of Different Shots Played in a Cricket Match</h2>
+            <form>
+                <span><input type="radio" name="dataset"  id="player1" value="player1" checked><label  for="player1"> Player 1</label></span>
+                <span><input type="radio" name="dataset"  id="player2" value="player2"> <label for="player2">Player 2</label></span>
+                <span> <input type="radio" name="dataset" id="player3"  value="player3" ><label for="player3"> Player 3 </label></span>
+                <span> <input type="radio" name="dataset"  id="player4" value="player4"> <label for="player4">Player 4</label></span>
+                <span> <input type="radio" name="dataset"  id="player5" value="player5" ><label for="player5"> Player 5 </label> </span>
+                <span> <input type="radio" name="dataset"  id="player6" value="player6" ><label for="player6"> Player 6 </label> </span>
+
+            </form>
+        </div>
+        <script src='players_runs_comparisons.js'></script>
+
+        <script src="http://d3js.org/d3.v5.min.js"></script>
+        <!-- Loading the Spatial Graph-->
+        <script src="http://d3js.org/topojson.v0.min.js"></script>
+        <div class="geo-chart" style="margin-bottom: 100px;">
+            <h2 class="line-chart-heading">Geo-Spatial Visualization of Top Cricket Playing Nations</h2>
+            <script src="spatial_teams_comparisons.js"></script>
+        </div>
+
+        <span class="choose-match">
+           <span style="margin-top: 10px; margin-right: 20px; "><b>Choose a Match: </b></span>
+        <select class="select-match" id="year"></select>
+        </span>
+        <span style="margin:1px" align="center"> 
+
+        </span>
+        <!-- Loading the Third Graph for the Project-->
+        <div class="bar-chart">
+            <h2 class="line-chart-heading">Match Runs Comparison using Bar Chart</h2>
+
+            <svg id="bar" width="650" height="400"></svg>
+        </div>
+
+        <div class="line-chart" style="margin-bottom: 10px;">
+            <!-- Added style  -->
+            <h2 class="line-chart-heading">Match Runs Comparison using Line Chart</h2>
+
+            <svg id="line" width="650" height="400"></svg>
+
+        </div>
+        <svg id="comparison" width="650" height="400"></svg>
+        <script src='cricket_matches_comparison.js'></script>
+
+        <p align="right">Dashboard Created By : Gurjot Singh(B00811724, gr525686@dal.ca)
+            <br/>Subject: Visualization, University: Dalhousie University</p>
+
+    </div>
+
+</body>
