@@ -1,5 +1,7 @@
 # Cricket Analysis Visualization
 
+Project Link: https://gurjot93.github.io/cricketvisualization/
+
 # 1) Runs Scored in a Match Analysis
 ![alt text](https://github.com/gurjot93/cricketvisualization/blob/master/Images/runs_analysis.PNG)
 
